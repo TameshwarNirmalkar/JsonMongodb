@@ -1,0 +1,26 @@
+{
+    "/api/": "/",
+    "/merchantAdmin/private/organization/productionAccess": "/productionAccess",
+    "/merchantAdmin/private/organization/productionAccess/:page/:limit": "/organizationslist?_page=:page&_limit=:limit",
+    "/merchantAdmin/private/organizationlist": "/organizationslist",
+    "/merchantAdmin/private/organizations": "/organizations",
+    "/merchantAdmin/private/organization/:id": "/organizations?id=:id",
+    "/merchantAdmin/private/me/UserAccount": "/UserAccount",
+    "/merchantAdmin/private/organization/:id/DELETE": "/organizations/:id",
+
+    "/three.ds.profile/v0/organizations/org2/3ds/acquirerRelationships/:id":"/acquirerRelationships/:id",
+    "/geography/v0/geography/currencies":"/currencies",
+    "/acquirer/v0/acquirers":"/acquirers",
+    "/pymtbrand/v0/payment/paymentBrands":"/paymentBrands",
+    "/three.ds.profile/v0/organizations/org2/3ds/acquirerRelationships":"/acquirerRelationships",
+    "/three.ds.profile/v0/organizations/org2/3ds/advancedCheckout":"/advancedCheckout",
+    "/orgmgmt/v0/organizations/org2/settings/transaction/allowed-card-types":"/allowed-card-types",
+    "/orgmgmt/v0/organizations/org2/merchantOrgDetails":"/merchantOrgDetails",
+    "/business/v0/business/categories":"/categories",
+    "/orgmgmt/v0/pspServiceProviders": "/pspServiceProviders",
+    "/business/v0/business/customerRanges": "/customerRanges",
+    "/usermgmt/v0/private/organizations/org2/users": "/users",
+    "/usermgmt/v0/private/users/me/memberships/clientIds": "clientIds",
+    "/geography/v0/geography/countries": "countries",
+    "/orgmgmt/v0/organizations/org2/initial-integration-info": "/initialIntegrationInfo"
+}
