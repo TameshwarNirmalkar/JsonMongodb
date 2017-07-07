@@ -4,7 +4,9 @@
   "description": "this is api created from express and json server",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "json": "json-server index.js -p 3005 -r routes.json -w db.json"
+    "json": "json-server index.js -p 3005 -r routes.json -w db.json",
+    "mongod": "mongod --dbpath /Users/e068816/SampleProject/MongoDbJson/data/db/",
+    "mongoclient": "mongo"
   },
   "main": "index.js",
   "dependencies": {
@@ -14,6 +16,7 @@
     "faker": "^4.1.0",
     "json-server": "^0.10.1",
     "moment": "^2.18.1",
+    "mongodb": "^2.2.29",
     "request": "^2.81.0",
     "xmlhttprequest": "^1.8.0"
   },
