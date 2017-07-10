@@ -1,6 +1,7 @@
 const express = require('express');
 const router = express.Router();
 const bodyParser = require('body-parser');
+const chalk = require('chalk');
 router.use(bodyParser.urlencoded({ extended: true }));
 
 const path = require('path');
@@ -21,14 +22,17 @@ router.post('/', function (req, res) {
         });
 });
 
-router.put('/:id', function (req, res) {
-    User.findOne({ _id: req.params.id }, req.body,
+router.put('/:id', function (req, res, next) {
+    User.findByIdAndUpdate({ _id: req.params.id }, req.body,
         function (err, updateduser) {
-            if (err) return res.status(404).send("Id not found");
-            updateduser.save(function(err){
-                if(err) return res.status(300).send({error: err});
+            if (err){
+                return res.status(500).send("There was a problem adding the information to the database.");
+            }else if(!updateduser){
+                return next(new Error(req.params.id+', Id not found'));
+            }
+            else{
                 res.status(200).send({message: "Data updated successfully"});
-            })
+            }
         });
 });
 
