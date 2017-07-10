@@ -5,8 +5,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "json": "json-server index.js -p 3005 -r routes.json -w db.json",
-    "mongod": "mongod --dbpath /Users/e068816/SampleProject/MongoDbJson/data/db/",
-    "mongoclient": "mongo"
+    "mongod": "mongod --dbpath /Users/e068816/SampleProject/MongoDbJson/data/db/; mongo;",
+    "mongoclient": "mongo",
+    "nodemon": "nodemon ./app.js"
   },
   "main": "index.js",
   "dependencies": {
@@ -14,10 +15,13 @@
     "body-parser": "^1.17.2",
     "express": "^4.15.3",
     "faker": "^4.1.0",
+    "forever": "^0.15.3",
     "json-server": "^0.10.1",
     "moment": "^2.18.1",
     "mongodb": "^2.2.29",
+    "nodemon": "^1.11.0",
     "request": "^2.81.0",
+    "supervisor": "^0.12.0",
     "xmlhttprequest": "^1.8.0"
   },
   "devDependencies": {},
