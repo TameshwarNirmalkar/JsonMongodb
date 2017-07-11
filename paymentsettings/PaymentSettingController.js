@@ -1,29 +1,32 @@
 const express = require('express');
 const bodyParser = require('body-parser');
-const path = require('path');
 const router = express.Router();
-router.use(bodyParser.urlencoded({ extended: false }));
+router.use( bodyParser.urlencoded({ extended: false }) );
 router.use( bodyParser.json() ) ;
+const path = require('path');
 const db = require(path.resolve(__dirname+'/db') ); //Database connection name
 
-const User = require( path.resolve(__dirname+'/User') );
+const AcquirerSchema = require( path.resolve(__dirname+'/AcquirerSchema') );
 
-// CREATES A NEW USER
-router.post('/', function (req, res) {
-    User.create({
-            id: req.body.id,
-            name : req.body.name,
-            email : req.body.email,
-            password : req.body.password
-        }, 
-        function (err, user) {
-            if (err) return res.status(500).send("There was a problem adding the information to the database.");
-            res.status(200).send(user);
-        });
+// RETURNS ALL THE ACQUIRERS IN THE DATABASE
+router.get('/', function (req, res) {
+    AcquirerSchema.find({}, function (err, users) {
+        if (err) return res.status(500).send("There was a problem finding the users.");
+        res.status(200).send(users);
+    });
 });
 
+// CREATES AN ACQUIRERS
+router.post('/', function (req, res) {
+    AcquirerSchema.create(req.body, function (err, data) {
+        if (err) return res.status(500).send("There was a problem adding the information to the database.");
+        res.status(200).send(data);
+    });
+});
+
+// UPDATES AN ACQUIRERS
 router.put('/:id', function (req, res, next) {
-    User.findByIdAndUpdate({ _id: req.params.id }, req.body,
+    AcquirerSchema.findByIdAndUpdate({ _id: req.params.id }, req.body,
         function (err, updateduser) {
             if (err){
                 return res.status(500).send("There was a problem adding the information to the database.");
@@ -36,26 +39,17 @@ router.put('/:id', function (req, res, next) {
         });
 });
 
-// RETURNS ALL THE USERS IN THE DATABASE
-router.get('/', function (req, res) {
-    User.find({}, function (err, users) {
-        if (err) return res.status(500).send("There was a problem finding the users.");
-        res.status(200).send(users);
-    });
-});
-
-// DELETE All records from usertable
+// DELETE All ACQUIRERS from PAYMENT SETTINGS TABLE
 router.delete('/', function (req, res) {
-    User.remove(function (err, users) {
+    AcquirerSchema.remove(function (err, users) {
         if (err) return res.status(500).send("There was a problem finding the users.");
         res.status(200).send({message: "Database empty"});
     });
 });
 
-// DELETE Single records from usertable
+// DELETE Single ACQUIRERS from PAYMENT SETTING TABLE
 router.delete('/:id', function (req, res) {
-    console.log(req.params.id);
-    User.findByIdAndRemove({_id: req.params.id},function (err, users) {
+    AcquirerSchema.findByIdAndRemove({_id: req.params.id},function (err, users) {
         if (err) return res.status(500).send("There was a problem finding the users id.");
         res.status(200).send({message: "Record deleted successfully"});
     });
