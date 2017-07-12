@@ -52,6 +52,19 @@ app.use('/currencies', CurrencyController);
 const AdvancedCheckoutController = require(path.resolve(__dirname+'/advancedcheckout/AdvancedCheckoutController') );
 app.use('/advancedCheckout', AdvancedCheckoutController);
 
+// ALLOW CARD TYPES  SERVICES
+const AllowCardTypesController = require(path.resolve(__dirname+'/allowedcardtypes/AllowCardTypesController') );
+app.use('/allowed-card-types', AllowCardTypesController);
+
+// ACQUIRERS  SERVICES
+const AcquirersController = require(path.resolve(__dirname+'/acquirers/AcquirersController') );
+app.use('/acquirers', AcquirersController);
+
+// PAYMENT BRANDS SERVICES
+const PaymentBrandsController = require(path.resolve(__dirname+'/paymentbrands/PaymentBrandsController') );
+app.use('/paymentBrands', PaymentBrandsController);
+
+
 app.listen(5000, () => {
   console.log('Mongo Database Ready: http://localhost:'+5000);
 })
