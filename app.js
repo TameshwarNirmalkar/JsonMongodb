@@ -4,14 +4,23 @@ const express = require('express');
 const path = require('path');
 var app = express();
 
-// USER MODULE
-const UserController = require(path.resolve(__dirname+'/usermodule/UserController') );
+// ORGANIZATIONS USER API
+const UserController = require(path.resolve(__dirname+'/users/UserController') );
 app.use('/users', UserController);
 
-// DASHBOARD MODULE
-const DashboardController = require(path.resolve(__dirname+'/dashboard/DashboardSettingController') );
-app.use('/dashboard', DashboardSettingController);
+// MEMBERSHIPS API
+const MembershipsController = require(path.resolve(__dirname+'/memberships/MembershipsController') );
+app.use('/memberships', MembershipsController);
 
+// ORGANIZATIONS API
+const OrganizationsController = require(path.resolve(__dirname+'/organizations/OrganizationsController') );
+app.use('/organizations', OrganizationsController);
+
+// USER ACCOUNT API
+const UserAccountController = require(path.resolve(__dirname+'/useraccount/UserAccountController') );
+app.use('/useraccount', UserAccountController);
+
+/*
 // KeyManagement MODULE
 const KeyManagementController = require(path.resolve(__dirname+'/keymanagement/KeyManagementController') );
 app.use('/keyManagement', KeyManagementController);
@@ -27,11 +36,11 @@ app.use('/companyManagement', CompanyManagementController);
 // shippingProfiles MODULE
 const ShippingProfilesController = require(path.resolve(__dirname+'/shippingprofiles/ShippingProfilesController') );
 app.use('/shippingProfiles', ShippingProfilesController);
-
+*/
 // businessProfile MODULE
 const BusinessProfileController = require(path.resolve(__dirname+'/businessprofile/BusinessProfileController') );
-app.use('/businessProfile', BusinessProfileController);
-
+app.use('/merchantOrgDetails', BusinessProfileController);
+/*
 // productionAccess MODULE
 const ProductionAccessController = require(path.resolve(__dirname+'/productionaccess/ProductionAccessController') );
 app.use('/productionAccess', ProductionAccessController);
@@ -39,15 +48,27 @@ app.use('/productionAccess', ProductionAccessController);
 // permissions MODULE
 const PermissionsController = require(path.resolve(__dirname+'/permissions/PermissionsController') );
 app.use('/permissions', PermissionsController);
-
+*/
 // PAYMENT SETTINGS MODULE
 const PaymentSettingController = require(path.resolve(__dirname+'/paymentsettings/PaymentSettingController') );
-app.use('/authenticationSettings', PaymentSettingController);
+app.use('/paymentsettings', PaymentSettingController);
 
 // CURRENCIES SERVICES
 const CurrencyController = require(path.resolve(__dirname+'/currencies/CurrencyController') );
 app.use('/currencies', CurrencyController);
 
+// CATEGORIES SERVICES
+const CategoriesController = require(path.resolve(__dirname+'/categories/CategoriesController') );
+app.use('/categories', CategoriesController);
+
+// PSP SERVICE PROVIDERS SERVICES
+const PspserviceProvidersController = require(path.resolve(__dirname+'/pspserviceproviders/PspserviceProvidersController') );
+app.use('/pspserviceproviders', PspserviceProvidersController);
+
+// Customer Ranges SERVICES
+const CustomerRangesController = require(path.resolve(__dirname+'/customerranges/CustomerRangesController') );
+app.use('/customerranges', CustomerRangesController);
+/*
 // ADVANCE CHECKOUT SERVICES
 const AdvancedCheckoutController = require(path.resolve(__dirname+'/advancedcheckout/AdvancedCheckoutController') );
 app.use('/advancedCheckout', AdvancedCheckoutController);
@@ -55,14 +76,14 @@ app.use('/advancedCheckout', AdvancedCheckoutController);
 // ALLOW CARD TYPES  SERVICES
 const AllowCardTypesController = require(path.resolve(__dirname+'/allowedcardtypes/AllowCardTypesController') );
 app.use('/allowed-card-types', AllowCardTypesController);
-
+*/
 // ACQUIRERS  SERVICES
 const AcquirersController = require(path.resolve(__dirname+'/acquirers/AcquirersController') );
 app.use('/acquirers', AcquirersController);
 
-// PAYMENT BRANDS SERVICES
+// PAYMENT BRANDS API
 const PaymentBrandsController = require(path.resolve(__dirname+'/paymentbrands/PaymentBrandsController') );
-app.use('/paymentBrands', PaymentBrandsController);
+app.use('/paymentbrands', PaymentBrandsController);
 
 
 app.listen(5000, () => {

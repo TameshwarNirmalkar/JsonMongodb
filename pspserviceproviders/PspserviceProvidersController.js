@@ -1,32 +1,32 @@
 const express = require('express');
 const bodyParser = require('body-parser');
-const router = express.Router();
-router.use( bodyParser.urlencoded({ extended: false }) );
-router.use( bodyParser.json() ) ;
 const path = require('path');
+const router = express.Router();
+router.use(bodyParser.urlencoded({ extended: false }));
+router.use( bodyParser.json() ) ;
 const db = require(path.resolve(__dirname+'/db') ); //Database connection name
 
-const AcquirerRelationshipsSchema = require( path.resolve(__dirname+'/AcquirerRelationshipsSchema') );
+const PspserviceProvidersSchema = require( path.resolve(__dirname+'/PspserviceProvidersSchema') );
 
-// RETURNS ALL THE ACQUIRERS IN THE DATABASE
+// RETURNS ALL THE USERS IN THE DATABASE
 router.get('/', function (req, res) {
-    AcquirerRelationshipsSchema.find({}, function (err, users) {
-        if (err) return res.status(500).send("There was a problem finding the users.");
-        res.status(200).send(users);
+    PspserviceProvidersSchema.find({},function (err, data) {
+        if (err) return res.status(500).send({error: err });
+        res.status(200).send(data);
     });
 });
 
-// CREATES AN ACQUIRERS
+// CREATES A NEW USER
 router.post('/', function (req, res) {
-    AcquirerRelationshipsSchema.create(req.body, function (err, data) {
-        if (err) return res.status(500).send("There was a problem adding the information to the database.");
-        res.status(200).send({message: "Acquirer relationsships added successfully"});
-    });
+    PspserviceProvidersSchema.create(req.body, 
+        function (err) {
+            if (err) return res.status(500).send(err.message);
+            res.status(200).send({message: "Data added successfully"});
+        });
 });
 
-// UPDATES AN ACQUIRERS
 router.put('/:id', function (req, res, next) {
-    AcquirerRelationshipsSchema.findByIdAndUpdate({ _id: req.params.id }, req.body,
+    PspserviceProvidersSchema.findByIdAndUpdate({ _id: req.params.id }, req.body,
         function (err, updateduser) {
             if (err){
                 return res.status(500).send("There was a problem adding the information to the database.");
@@ -39,17 +39,17 @@ router.put('/:id', function (req, res, next) {
         });
 });
 
-// DELETE All ACQUIRERS from PAYMENT SETTINGS TABLE
+// DELETE All records from usertable
 router.delete('/', function (req, res) {
-    AcquirerRelationshipsSchema.remove(function (err, users) {
+    PspserviceProvidersSchema.remove(function (err) {
         if (err) return res.status(500).send("There was a problem finding the users.");
         res.status(200).send({message: "Database empty"});
     });
 });
 
-// DELETE Single ACQUIRERS from PAYMENT SETTING TABLE
+// DELETE records by id
 router.delete('/:id', function (req, res) {
-    AcquirerRelationshipsSchema.findByIdAndRemove({_id: req.params.id},function (err, users) {
+    PspserviceProvidersSchema.findByIdAndRemove({_id: req.params.id},function (err, users) {
         if (err) return res.status(500).send("There was a problem finding the users id.");
         res.status(200).send({message: "Record deleted successfully"});
     });

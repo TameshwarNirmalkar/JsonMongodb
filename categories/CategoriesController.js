@@ -6,24 +6,27 @@ router.use(bodyParser.urlencoded({ extended: false }));
 router.use( bodyParser.json() ) ;
 const db = require(path.resolve(__dirname+'/db') ); //Database connection name
 
-const User = require( path.resolve(__dirname+'/User') );
+const CategoriesSchema = require( path.resolve(__dirname+'/CategoriesSchema') );
+
+// RETURNS ALL THE USERS IN THE DATABASE
+router.get('/', function (req, res) {
+    CategoriesSchema.find((req.query.businessType)?{businessType:req.query.businessType}:{}, function (err, data) {
+        if (err) return res.status(500).send({error: err });
+        res.status(200).send(data);
+    });
+});
 
 // CREATES A NEW USER
 router.post('/', function (req, res) {
-    User.create({
-            id: req.body.id,
-            name : req.body.name,
-            email : req.body.email,
-            password : req.body.password
-        }, 
-        function (err, user) {
-            if (err) return res.status(500).send("There was a problem adding the information to the database.");
-            res.status(200).send(user);
+    CategoriesSchema.create(req.body, 
+        function (err) {
+            if (err) return res.status(500).send(err.message);
+            res.status(200).send({message: "Data added successfully"});
         });
 });
 
 router.put('/:id', function (req, res, next) {
-    User.findByIdAndUpdate({ _id: req.params.id }, req.body,
+    CategoriesSchema.findByIdAndUpdate({ _id: req.params.id }, req.body,
         function (err, updateduser) {
             if (err){
                 return res.status(500).send("There was a problem adding the information to the database.");
@@ -36,26 +39,17 @@ router.put('/:id', function (req, res, next) {
         });
 });
 
-// RETURNS ALL THE USERS IN THE DATABASE
-router.get('/', function (req, res) {
-    User.find({}, function (err, users) {
-        if (err) return res.status(500).send("There was a problem finding the users.");
-        res.status(200).send(users);
-    });
-});
-
 // DELETE All records from usertable
 router.delete('/', function (req, res) {
-    User.remove(function (err, users) {
+    CategoriesSchema.remove(function (err) {
         if (err) return res.status(500).send("There was a problem finding the users.");
         res.status(200).send({message: "Database empty"});
     });
 });
 
-// DELETE Single records from usertable
+// DELETE records by id
 router.delete('/:id', function (req, res) {
-    console.log(req.params.id);
-    User.findByIdAndRemove({_id: req.params.id},function (err, users) {
+    CategoriesSchema.findByIdAndRemove({_id: req.params.id},function (err, users) {
         if (err) return res.status(500).send("There was a problem finding the users id.");
         res.status(200).send({message: "Record deleted successfully"});
     });
