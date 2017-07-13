@@ -2,7 +2,8 @@ const express = require('express');
 // const mongodb = require('mongodb');
 // const bodyParser = require('body-parser');
 const path = require('path');
-var app = express();
+const app = express();
+// const appconstant = require('./app_constant');
 
 // ORGANIZATIONS USER API
 const UserController = require(path.resolve(__dirname+'/users/UserController') );
@@ -20,40 +21,43 @@ app.use('/organizations', OrganizationsController);
 const UserAccountController = require(path.resolve(__dirname+'/useraccount/UserAccountController') );
 app.use('/useraccount', UserAccountController);
 
-/*
 // KeyManagement MODULE
-const KeyManagementController = require(path.resolve(__dirname+'/keymanagement/KeyManagementController') );
-app.use('/keyManagement', KeyManagementController);
+// const KeyManagementController = require(path.resolve(__dirname+'/keymanagement/KeyManagementController') );
+// app.use('/keyManagement', KeyManagementController);
 
-// OriginUrl MODULE
-const OriginUrlController = require(path.resolve(__dirname+'/originurl/OriginUrlController') );
-app.use('/originUrl', OriginUrlController);
+// OriginUrl API
+const OriginUrlController = require(path.resolve(__dirname+'/originurls/OriginUrlController') );
+app.use('/originurls', OriginUrlController);
+
+// BRANDS SERVICES
+const BrandsController = require(path.resolve(__dirname+'/brands/BrandsController') );
+app.use('/brands', BrandsController);
 
 // companyManagement MODULE
-const CompanyManagementController = require(path.resolve(__dirname+'/companymanagement/CompanyManagementController') );
-app.use('/companyManagement', CompanyManagementController);
+// const CompanyManagementController = require(path.resolve(__dirname+'/companymanagement/CompanyManagementController') );
+// app.use('/companyManagement', CompanyManagementController);
 
 // shippingProfiles MODULE
-const ShippingProfilesController = require(path.resolve(__dirname+'/shippingprofiles/ShippingProfilesController') );
-app.use('/shippingProfiles', ShippingProfilesController);
-*/
-// businessProfile MODULE
+// const ShippingProfilesController = require(path.resolve(__dirname+'/shippingprofiles/ShippingProfilesController') );
+// app.use('/shippingProfiles', ShippingProfilesController);
+
+// businessProfile API
 const BusinessProfileController = require(path.resolve(__dirname+'/businessprofile/BusinessProfileController') );
 app.use('/merchantOrgDetails', BusinessProfileController);
-/*
+
 // productionAccess MODULE
-const ProductionAccessController = require(path.resolve(__dirname+'/productionaccess/ProductionAccessController') );
-app.use('/productionAccess', ProductionAccessController);
+// const ProductionAccessController = require(path.resolve(__dirname+'/productionaccess/ProductionAccessController') );
+// app.use('/productionAccess', ProductionAccessController);
 
 // permissions MODULE
-const PermissionsController = require(path.resolve(__dirname+'/permissions/PermissionsController') );
-app.use('/permissions', PermissionsController);
-*/
-// PAYMENT SETTINGS MODULE
-const PaymentSettingController = require(path.resolve(__dirname+'/paymentsettings/PaymentSettingController') );
-app.use('/paymentsettings', PaymentSettingController);
+// const PermissionsController = require(path.resolve(__dirname+'/permissions/PermissionsController') );
+// app.use('/permissions', PermissionsController);
 
-// CURRENCIES SERVICES
+// PAYMENT SETTINGS MODULE
+// const PaymentSettingController = require(path.resolve(__dirname+'/paymentsettings/PaymentSettingController') );
+// app.use('/paymentsettings', PaymentSettingController);
+
+// CURRENCIES API
 const CurrencyController = require(path.resolve(__dirname+'/currencies/CurrencyController') );
 app.use('/currencies', CurrencyController);
 
@@ -61,23 +65,23 @@ app.use('/currencies', CurrencyController);
 const CategoriesController = require(path.resolve(__dirname+'/categories/CategoriesController') );
 app.use('/categories', CategoriesController);
 
-// PSP SERVICE PROVIDERS SERVICES
+// PSP SERVICE PROVIDERS API
 const PspserviceProvidersController = require(path.resolve(__dirname+'/pspserviceproviders/PspserviceProvidersController') );
 app.use('/pspserviceproviders', PspserviceProvidersController);
 
-// Customer Ranges SERVICES
+// Customer Ranges API
 const CustomerRangesController = require(path.resolve(__dirname+'/customerranges/CustomerRangesController') );
 app.use('/customerranges', CustomerRangesController);
-/*
-// ADVANCE CHECKOUT SERVICES
-const AdvancedCheckoutController = require(path.resolve(__dirname+'/advancedcheckout/AdvancedCheckoutController') );
-app.use('/advancedCheckout', AdvancedCheckoutController);
 
-// ALLOW CARD TYPES  SERVICES
-const AllowCardTypesController = require(path.resolve(__dirname+'/allowedcardtypes/AllowCardTypesController') );
-app.use('/allowed-card-types', AllowCardTypesController);
-*/
-// ACQUIRERS  SERVICES
+// ADVANCE CHECKOUT API
+// const AdvancedCheckoutController = require(path.resolve(__dirname+'/advancedcheckout/AdvancedCheckoutController') );
+// app.use('/advancedCheckout', AdvancedCheckoutController);
+
+// ALLOW CARD TYPES  API
+// const AllowCardTypesController = require(path.resolve(__dirname+'/allowedcardtypes/AllowCardTypesController') );
+// app.use('/allowed-card-types', AllowCardTypesController);
+
+// ACQUIRERS  API
 const AcquirersController = require(path.resolve(__dirname+'/acquirers/AcquirersController') );
 app.use('/acquirers', AcquirersController);
 

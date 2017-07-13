@@ -7,7 +7,8 @@
     "json": "json-server index.js -p 3005 -r routes.json -w db.json",
     "mongod": "mongod --dbpath /Users/e068816/SampleProject/MongoDbJson/data/db/; mongo;",
     "mongoclient": "mongo",
-    "nodemon": "nodemon ./app.js"
+    "nodemon": "nodemon application.js & nodemon ./app/app.js",
+    "approute": "nodemon application.js"
   },
   "main": "index.js",
   "dependencies": {

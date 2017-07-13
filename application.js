@@ -1,31 +1,23 @@
 const express = require('express');
-const jsonServer = require('json-server');
 const Promise = require('bluebird');
-const XMLHttpRequest = require("xmlhttprequest").XMLHttpRequest;
 const path = require('path');
 const request = require('request');
 const bodyParser = require('body-parser');
 
 const APP_CONSTANT = require('./constant.js');
 
-const app = express();
-const myRouter = express.Router();
-
-// You may want to mount JSON Server on a specific end-point, for example /api
-// Optiona,l except if you want to have JSON Server defaults
-// server.use('/api', jsonServer.defaults()); 
-const server = jsonServer.create();
-const router = jsonServer.router(path.join(__dirname, 'db.json'));
-const middlewares = jsonServer.defaults();
+const server = express();
+const Router = express.Router();
 
 // Set default middlewares (logger, static, cors and no-cache)
-server.use(middlewares);
-server.get('/api', (req, res) => {
+server.use(bodyParser.json());
+server.use( bodyParser.urlencoded({ extended: false }) );
+
+server.get('/', (req, res) => {
   res.jsonp(req.query);
 });
 // To handle POST, PUT and PATCH you need to use a body-parser
 // You can use the one used by JSON Server
-server.use(jsonServer.bodyParser);
 server.use((req, res, next) => {
   if (req.method === 'POST') {
     req.body.createdAt = Date.now()
@@ -33,16 +25,12 @@ server.use((req, res, next) => {
   // Continue to JSON Server router
   next()
 })
-app.use(bodyParser.json()); // support json encoded bodies
-app.use(bodyParser.urlencoded({
-  extended: true
-})); // support encoded bodies
 
 // Portal Notificaiton API
 server.get('/merchantAdmin/portalNotification', function (req, res) {
   request({
     method: 'GET',
-    uri: APP_CONSTANT.BASE_ADDRESS + '/portalNotification',
+    uri: APP_CONSTANT.SERVICE_API + '/portalNotification',
     headers: APP_CONSTANT.HEADERS
   }, function (error, response, body) {
     if (!error && response.statusCode == 200) {
@@ -55,7 +43,7 @@ server.get('/merchantAdmin/portalNotification', function (req, res) {
 server.get('/merchantAdmin/private/me/UserAccount', function (req, res) {
   request({
     method: 'GET',
-    uri: APP_CONSTANT.BASE_ADDRESS + '/UserAccount',
+    uri: APP_CONSTANT.SERVICE_API + '/useraccount',
     headers: APP_CONSTANT.HEADERS
   }, function (error, response, body) {
     if (!error && response.statusCode == 200) {
@@ -69,7 +57,7 @@ server.get('/merchantAdmin/private/organization/productionAccess', function (req
   // console.log(req.query.offset, '===',req.query.limit);
   request({
     method: 'GET',
-    uri: APP_CONSTANT.BASE_ADDRESS + '/organizationslist',
+    uri: APP_CONSTANT.SERVICE_API + '/organizationslist',
     headers: APP_CONSTANT.HEADERS
   }, function (error, response, body) {
     if (!error && response.statusCode == 200) {
@@ -81,7 +69,7 @@ server.get('/merchantAdmin/private/organization/productionAccess', function (req
       
       request({
         method: 'GET',
-        uri: APP_CONSTANT.BASE_ADDRESS + '/organizationslist?_page=' + req.query.offset + '&_limit=' + req.query.limit,
+        uri: APP_CONSTANT.SERVICE_API + '/organizationslist?_page=' + req.query.offset + '&_limit=' + req.query.limit,
         headers: APP_CONSTANT.HEADERS
       }, function (e, r, b) {
         if (!e && r.statusCode == 200) {
@@ -100,7 +88,7 @@ server.get('/merchantAdmin/private/organization/:id', function (req, res) {
   // console.log( req.params.id );
   request({
     method: 'GET',
-    uri: APP_CONSTANT.BASE_ADDRESS + '/organizations?organizationId=' + req.params.id,
+    uri: APP_CONSTANT.SERVICE_API + '/organizations?organizationId=' + req.params.id,
     headers: APP_CONSTANT.HEADERS
   }, function (error, response, body) {
     if (!error && response.statusCode == 200) {
@@ -132,7 +120,7 @@ server.put('/merchantAdmin/private/organization/:id/prodAccessRequest/:status', 
 server.delete('/merchantAdmin/private/organization/:id/DELETE', function (req, res) {
   request({
     method: 'DELETE',
-    uri: APP_CONSTANT.BASE_ADDRESS + '/organizations/' + req.params.id + '/DELETE',
+    uri: APP_CONSTANT.SERVICE_API + '/organizations/' + req.params.id + '/DELETE',
     headers: APP_CONSTANT.HEADERS
   }, function (error, response, body) {
     if (!error && response.statusCode == 200) {
@@ -149,7 +137,7 @@ server.get('/geography/v0/geography/countries', function (req, res) {
   // console.log( req.params.id );
   request({
     method: 'GET',
-    uri: APP_CONSTANT.BASE_ADDRESS + '/countries',
+    uri: APP_CONSTANT.SERVICE_API + '/countries',
     headers: APP_CONSTANT.HEADERS
   }, function (error, response, body) {
     if (!error && response.statusCode == 200) {
@@ -161,7 +149,7 @@ server.get('/geography/v0/geography/countries', function (req, res) {
 server.get('/orgmgmt/v0/organizations/org2/merchantOrgDetails', function(req, res){
   request({
     method: 'GET',
-    uri: APP_CONSTANT.BASE_ADDRESS + '/merchantOrgDetails',
+    uri: APP_CONSTANT.SERVICE_API + '/merchantOrgDetails',
     headers: APP_CONSTANT.HEADERS
   }, function (error, response, body) {
     if (!error && response.statusCode == 200) {
@@ -173,7 +161,7 @@ server.get('/orgmgmt/v0/organizations/org2/merchantOrgDetails', function(req, re
 server.get('/business/v0/business/categories/', function (req, res) {
   request({
     method: 'GET',
-    uri: APP_CONSTANT.BASE_ADDRESS + '/categories',
+    uri: APP_CONSTANT.SERVICE_API + '/categories',
     headers: APP_CONSTANT.HEADERS
   }, function (error, response, body) {
     if (!error && response.statusCode == 200) {
@@ -185,7 +173,7 @@ server.get('/business/v0/business/categories/', function (req, res) {
 server.get('/orgmgmt/v0/pspServiceProviders', function (req, res) {
   request({
     method: 'GET',
-    uri: APP_CONSTANT.BASE_ADDRESS + '/pspServiceProviders',
+    uri: APP_CONSTANT.SERVICE_API + '/pspServiceProviders',
     headers: APP_CONSTANT.HEADERS
   }, function (error, response, body) {
     if (!error && response.statusCode == 200) {
@@ -197,7 +185,7 @@ server.get('/orgmgmt/v0/pspServiceProviders', function (req, res) {
 server.get('/business/v0/business/customerRanges', function (req, res) {
   request({
     method: 'GET',
-    uri: APP_CONSTANT.BASE_ADDRESS + '/customerRanges',
+    uri: APP_CONSTANT.SERVICE_API + '/customerRanges',
     headers: APP_CONSTANT.HEADERS
   }, function (error, response, body) {
     if (!error && response.statusCode == 200) {
@@ -209,7 +197,7 @@ server.get('/business/v0/business/customerRanges', function (req, res) {
 server.get('/usermgmt/v0/private/organizations/org2/users', function (req, res) {
   request({
     method: 'GET',
-    uri: APP_CONSTANT.BASE_ADDRESS + '/users',
+    uri: APP_CONSTANT.SERVICE_API + '/users',
     headers: APP_CONSTANT.HEADERS
   }, function (error, response, body) {
     if (!error && response.statusCode == 200) {
@@ -221,7 +209,7 @@ server.get('/usermgmt/v0/private/organizations/org2/users', function (req, res) 
 server.get('/geography/v0/geography/currencies', function (req, res) {
   request({
     method: 'GET',
-    uri: APP_CONSTANT.BASE_ADDRESS + '/currencies',
+    uri: APP_CONSTANT.SERVICE_API + '/currencies',
     headers: APP_CONSTANT.HEADERS
   }, function (error, response, body) {
     if (!error && response.statusCode == 200) {
@@ -233,7 +221,7 @@ server.get('/geography/v0/geography/currencies', function (req, res) {
 server.get('/pymtbrand/v0/payment/paymentBrands', function (req, res) {
   request({
     method: 'GET',
-    uri: APP_CONSTANT.BASE_ADDRESS + '/paymentBrands',
+    uri: APP_CONSTANT.SERVICE_API + '/paymentBrands',
     headers: APP_CONSTANT.HEADERS
   }, function (error, response, body) {
     if (!error && response.statusCode == 200) {
@@ -245,7 +233,7 @@ server.get('/pymtbrand/v0/payment/paymentBrands', function (req, res) {
 server.get('/acquirer/v0/acquirers', function (req, res) {
   request({
     method: 'GET',
-    uri: APP_CONSTANT.BASE_ADDRESS + '/acquirer',
+    uri: APP_CONSTANT.SERVICE_API + '/acquirer',
     headers: APP_CONSTANT.HEADERS
   }, function (error, response, body) {
     if (!error && response.statusCode == 200) {
@@ -257,7 +245,7 @@ server.get('/acquirer/v0/acquirers', function (req, res) {
 server.get('/three.ds.profile/v0/organizations/org2/3ds/acquirerRelationships', function (req, res) {
   request({
     method: 'GET',
-    uri: APP_CONSTANT.BASE_ADDRESS + '/acquirerRelationships',
+    uri: APP_CONSTANT.SERVICE_API + '/acquirerRelationships',
     headers: APP_CONSTANT.HEADERS
   }, function (error, response, body) {
     if (!error && response.statusCode == 200) {
@@ -269,7 +257,7 @@ server.get('/three.ds.profile/v0/organizations/org2/3ds/acquirerRelationships', 
 server.delete('/three.ds.profile/v0/organizations/org2/3ds/acquirerRelationships/:id', function (req, res) {
   request({
     method: 'DELETE',
-    uri: APP_CONSTANT.BASE_ADDRESS + '/acquirerRelationships/'+req.params.id,
+    uri: APP_CONSTANT.SERVICE_API + '/acquirerRelationships/'+req.params.id,
     headers: APP_CONSTANT.HEADERS
   }, function (error, response, body) {
     if (!error && response.statusCode == 200) {
@@ -282,7 +270,7 @@ server.delete('/three.ds.profile/v0/organizations/org2/3ds/acquirerRelationships
 server.get('/three.ds.profile/v0/organizations/org2/3ds/advancedCheckout', function (req, res) {
   request({
     method: 'GET',
-    uri: APP_CONSTANT.BASE_ADDRESS + '/advancedCheckout',
+    uri: APP_CONSTANT.SERVICE_API + '/advancedCheckout',
     headers: APP_CONSTANT.HEADERS
   }, function (error, response, body) {
     if (!error && response.statusCode == 200) {
@@ -294,7 +282,7 @@ server.get('/three.ds.profile/v0/organizations/org2/3ds/advancedCheckout', funct
 server.get('/orgmgmt/v0/organizations/org2/settings/transaction/allowed-card-types', function (req, res) {
   request({
     method: 'GET',
-    uri: APP_CONSTANT.BASE_ADDRESS + '/allowed-card-types',
+    uri: APP_CONSTANT.SERVICE_API + '/allowed-card-types',
     headers: APP_CONSTANT.HEADERS
   }, function (error, response, body) {
     if (!error && response.statusCode == 200) {
@@ -306,7 +294,7 @@ server.get('/orgmgmt/v0/organizations/org2/settings/transaction/allowed-card-typ
 server.get('/adminref/v0/public/portalNotification', function (req, res) {
   request({
     method: 'GET',
-    uri: APP_CONSTANT.BASE_ADDRESS + '/portalNotification',
+    uri: APP_CONSTANT.SERVICE_API + '/portalNotification',
     headers: APP_CONSTANT.HEADERS
   }, function (error, response, body) {
     if (!error && response.statusCode == 200) {
@@ -318,7 +306,7 @@ server.get('/adminref/v0/public/portalNotification', function (req, res) {
 server.get('/orgmgmt/v0/organizations/org2/initial-integration-info', function (req, res) {
   request({
     method: 'GET',
-    uri: APP_CONSTANT.BASE_ADDRESS + '/initialIntegrationInfo',
+    uri: APP_CONSTANT.SERVICE_API + '/initialIntegrationInfo',
     headers: APP_CONSTANT.HEADERS
   }, function (error, response, body) {
     if (!error && response.statusCode == 200) {
@@ -330,7 +318,7 @@ server.get('/orgmgmt/v0/organizations/org2/initial-integration-info', function (
 // server.get('/usermgmt/v0/private/users/me/memberships/clientIds', function (req, res) {
 //   // request({
 //   //   method: 'GET',
-//   //   uri: APP_CONSTANT.BASE_ADDRESS + '/clientIds',
+//   //   uri: APP_CONSTANT.SERVICE_API + '/clientIds',
 //   //   headers: APP_CONSTANT.HEADERS
 //   // }, function (error, response, body) {
 //   //   if (!error && response.statusCode == 200) {
@@ -342,9 +330,6 @@ server.get('/orgmgmt/v0/organizations/org2/initial-integration-info', function (
 //   });
 // });
 
-
-
-server.use(router);
 server.listen(APP_CONSTANT.PORT, () => {
-  console.log('JSON Server is running on PORT: ', APP_CONSTANT.PORT);
+  console.log('Application is running on PORT: ', APP_CONSTANT.PORT);
 })

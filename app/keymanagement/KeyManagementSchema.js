@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-const Memberships = new mongoose.Schema({
+const KeyManagement = new mongoose.Schema({
     id: Number,
     organizationId: String,
     userAccountId: String,
@@ -8,6 +8,6 @@ const Memberships = new mongoose.Schema({
     status: String,
     statusDate: Number
 });
-mongoose.model('MembershipsSchema', Memberships);
+mongoose.model('KeyManagementSchema', Memberships);
 
-module.exports = mongoose.model('MembershipsSchema');
+module.exports = mongoose.model('KeyManagementSchema');

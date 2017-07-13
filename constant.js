@@ -1,7 +1,8 @@
 const PORT = process.env.PORT || 8080;
 const HOST = process.env.HOST || 'localhost';
-const JSON_SERVER_PORT = 3001;
+const SERVICE_API_PORT = 5000;
 const BASE_ADDRESS = 'http://'+HOST+':'+PORT;
+const SERVICE_API = 'http://'+HOST+':'+SERVICE_API_PORT;
 module.exports = {
     "PORT": PORT,
     "HOST": HOST,
@@ -10,5 +11,6 @@ module.exports = {
         name: 'content-type',
         value: 'application/json'
     }],
-    "JSON_SERVER_PORT": JSON_SERVER_PORT
+    "SERVICE_API_PORT": SERVICE_API_PORT,
+    "SERVICE_API": SERVICE_API
 };

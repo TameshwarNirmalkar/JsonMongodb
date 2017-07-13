@@ -3,7 +3,6 @@ const mongoose = require('mongoose');
  * Organization users
  */
 const BusinessProfile = new mongoose.Schema({
-  id: Number,
   organizationDzAccount: Object,
   sandboxClientId: String,
   countryOfIncorporationAustralia: Boolean,
