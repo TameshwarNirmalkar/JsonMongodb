@@ -1,0 +1,83 @@
+{
+    "org2": {
+        "developers": [
+            {
+                "dzUserId": "kbryantdev",
+                "dzEmail": "noahmateendev+stage1dev@gmail.com",
+                "dzFirstName": "kbryantdev",
+                "dzLastName": "   ",
+                "dzMPassRelation": {
+                    "kbryant0noa": {
+                        "mpUserId": "kbryant0noa",
+                        "devZoneInfo": "kbryantdev",
+                        "dzUserId": "kbryantdev"
+                    },
+                    "qelizabeth0wil": {
+                        "mpUserId": "qelizabeth0wil",
+                        "devZoneInfo": "kbryantdev",
+                        "dzUserId": "kbryantdev"
+                    }
+                },
+                "developerKey": [
+                    {
+                        "keyId": "414d537676752b56644d36486c587773596a682f54594d3d",
+                        "expired": false,
+                        "developerZoneUserId": "kbryantdev",
+                        "alias": "Production-1",
+                        "expiry": 1486620000000
+                    },
+                    {
+                        "keyId": "6565536a62674d362b51725343536e4b4273715677513d3d",
+                        "expired": false,
+                        "developerZoneUserId": "kbryantdev",
+                        "alias": "Sandbox-2",
+                        "expiry": 1486620000000
+                    },
+                    {
+                        "keyId": "65796474332f734b41654a4e394e77774868773754413d3d",
+                        "expired": false,
+                        "developerZoneUserId": "kbryantdev",
+                        "alias": "Sandbox-3",
+                        "expiry": 1486620000000
+                    },
+                    {
+                        "keyId": "514a6b424550427572502b5a6c55516965444e7565773d3d",
+                        "expired": false,
+                        "developerZoneUserId": "kbryantdev",
+                        "alias": "Sandbox-1",
+                        "expiry": 1486620000000
+                    },
+                    {
+                        "keyId": "41563377794c747341693272535270627663536d30773d3d",
+                        "expired": false,
+                        "developerZoneUserId": "kbryantdev",
+                        "alias": "Production-3",
+                        "expiry": 1486620000000
+                    }
+                ]
+            },
+            {
+                "dzUserId": "n1noastagedev",
+                "dzEmail": "noahmateendev+dev2@gmail.com",
+                "dzFirstName": "n1noastagedev",
+                "dzLastName": "   ",
+                "dzMPassRelation": {
+                    "colsson0ocs": {
+                        "mpUserId": "colsson0ocs",
+                        "devZoneInfo": "n1noastagedev",
+                        "dzUserId": "n1noastagedev"
+                    }
+                },
+                "developerKey": [
+                    {
+                        "keyId": "4461493038666242654b4237646e69395779507372673d3d",
+                        "expired": false,
+                        "developerZoneUserId": "n1noastagedev",
+                        "alias": "Sandbox Test 1",
+                        "expiry": 1484892000000
+                    }
+                ]
+            }
+        ]
+    }
+}

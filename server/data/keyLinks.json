@@ -1,0 +1,69 @@
+{
+    "keyLinks": [{
+        "status": "CONNECTED",
+        "organizationClient": {
+            "keyLinkMap": {},
+            "organizationClientId": "dBvSHF-cFdP8OP-USohkuek7Q1o1NvVliJ8-sqNgea2822a7",
+            "orgId": "b86be2c421284385b8aab87c5eeda171",
+            "environment": "PRODUCTION"
+        },
+        "developerKeyId": "3b2d2dff63d04878aae9d7e4b7d833c40000000000000000",
+        "organizationClientId": "dBvSHF-cFdP8OP-USohkuek7Q1o1NvVliJ8-sqNgea2822a7",
+        "statusDate": 1492609542000,
+        "developerKey": {
+            "keyId": "3b2d2dff63d04878aae9d7e4b7d833c40000000000000000",
+            "keyLinkMap": {},
+            "developer": {},
+            "dzKeyCsr": null,
+            "expired": false,
+            "developerZoneUserId": "devJoelParkerdz",
+            "alias": "Repasustem7464",
+            "environment": "PRODUCTION",
+            "expiry": 1505278800000
+        }
+    }, {
+        "status": "APPROVED",
+        "organizationClient": {
+            "keyLinkMap": {},
+            "organizationClientId": "dBvSHF-cFdP8OP-USohkuek7Q1o1NvVliJ8-sqNgea2822a7",
+            "orgId": "b86be2c421284385b8aab87c5eeda171",
+            "environment": "PRODUCTION"
+        },
+        "developerKeyId": "5f61a25190b54b69b4ce351b7125e3fb0000000000000000",
+        "organizationClientId": "dBvSHF-cFdP8OP-USohkuek7Q1o1NvVliJ8-sqNgea2822a7",
+        "statusDate": 1483632606000,
+        "developerKey": {
+            "keyId": "5f61a25190b54b69b4ce351b7125e3fb0000000000000000",
+            "keyLinkMap": {},
+            "developer": {},
+            "dzKeyCsr": null,
+            "expired": false,
+            "developerZoneUserId": "devJoelParkerdz",
+            "alias": "Abdominal",
+            "environment": "PRODUCTION",
+            "expiry": 1617512400000
+        }
+    }, {
+        "status": "PENDING_APPROVAL",
+        "organizationClient": {
+            "keyLinkMap": {},
+            "organizationClientId": "K4h59asEEy1UaERgsKNLvGlM4SBoCZ64p-yviksv7ec8bed8",
+            "orgId": "b86be2c421284385b8aab87c5eeda171",
+            "environment": "SANDBOX"
+        },
+        "developerKeyId": "fc86cf7094564db4a2a6dd97c6fcee3c0000000000000000",
+        "organizationClientId": "K4h59asEEy1UaERgsKNLvGlM4SBoCZ64p-yviksv7ec8bed8",
+        "statusDate": 1483633387000,
+        "developerKey": {
+            "keyId": "fc86cf7094564db4a2a6dd97c6fcee3c0000000000000000",
+            "keyLinkMap": {},
+            "developer": {},
+            "dzKeyCsr": null,
+            "expired": false,
+            "developerZoneUserId": "devJoelParkerdz",
+            "alias": "Sonographer",
+            "environment": "SANDBOX",
+            "expiry": 1494656134924
+        }
+    }]
+}

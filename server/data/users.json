@@ -1,0 +1,23 @@
+{
+  "orgUsers": [{
+      "firstName": "nishant",
+      "lastName": "kumar",
+      "userId": "8a1d7a6757d27cf30157f5e7a73d0024",
+      "username": "dummyUser01",
+      "emailAddress": "test@email.com",
+      "organizationId": "org2",
+      "status": "REGISTERED",
+      "userRole": "ADMINISTRATOR",
+      "dateAdded": 1488415408000
+  }, {
+      "firstName": "Nishant",
+      "lastName": "Dev",
+      "userId": "8a1d7a6657d27bd60157f5fedfaf001b",
+      "username": "dummyDev01",
+      "emailAddress": "getnishantkmr+d01@gmail.com",
+      "organizationId": "org2",
+      "status": "REGISTERED",
+      "userRole": "DEVELOPER",
+      "dateAdded": 1488415408000
+  }]
+}

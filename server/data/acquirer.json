@@ -1,0 +1,247 @@
+{
+    "acquirers": [{
+    "id": "465737",
+    "name": "AIB Bank UK - 465737",
+    "cardBrand": "VISA"
+}, {
+    "id": "512262",
+    "name": "AIB Bank UK - 512262",
+    "cardBrand": "MASTERCARD"
+}, {
+    "id": "88888888",
+    "name": "AIB ReDEurope Merchant ACS - 88888888",
+    "cardBrand": "VISA"
+}, {
+    "id": "543048",
+    "name": "ANZ MasterCard Valfac Test - 543048",
+    "cardBrand": "MASTERCARD"
+}, {
+    "id": "496000",
+    "name": "AlphaBank - 496000",
+    "cardBrand": "VISA"
+}, {
+    "id": "492900",
+    "name": "Barclaycard MerchantACS - 492900",
+    "cardBrand": "VISA"
+}, {
+    "id": "542182",
+    "name": "Barclaycard MerchantACS - 542182",
+    "cardBrand": "MASTERCARD"
+}, {
+    "id": "531615",
+    "name": "CYBS AIB MasterCard Valfac Test - 531615",
+    "cardBrand": "MASTERCARD"
+}, {
+    "id": "465733",
+    "name": "CYBS AIB Visa PIT MAF - 465733",
+    "cardBrand": "VISA"
+}, {
+    "id": "990033",
+    "name": "CYBS MerchantACS MasterCard - 990033",
+    "cardBrand": "MASTERCARD"
+}, {
+    "id": "469216",
+    "name": "CYBS MerchantACS Visa - 469216",
+    "cardBrand": "VISA"
+}, {
+    "id": "542515",
+    "name": "CYBS TSYS MC Valfac - 542515",
+    "cardBrand": "MASTERCARD"
+}, {
+    "id": "411111",
+    "name": "CYBS Visa PIT MAF - 411111",
+    "cardBrand": "VISA"
+}, {
+    "id": "514116",
+    "name": "CartaSI - 514116",
+    "cardBrand": "MASTERCARD"
+}, {
+    "id": "461043",
+    "name": "Chase - 461043",
+    "cardBrand": "VISA"
+}, {
+    "id": "547660",
+    "name": "Chase - 547660",
+    "cardBrand": "MASTERCARD"
+}, {
+    "id": "455038",
+    "name": "Citibank Test - 455038",
+    "cardBrand": "VISA"
+}, {
+    "id": "554619",
+    "name": "Citibank Test - 554619",
+    "cardBrand": "MASTERCARD"
+}, {
+    "id": "541340",
+    "name": "Fifth Third Bank - 541340",
+    "cardBrand": "MASTERCARD"
+}, {
+    "id": "123457",
+    "name": "FirstData Nashville Visa MerchantACS - 123457",
+    "cardBrand": "VISA"
+}, {
+    "id": "123456",
+    "name": "FirstDataEU MerchantACS - 123456",
+    "cardBrand": "VISA"
+}, {
+    "id": "520334",
+    "name": "GSI Global MasterCard Valfac Test - 520334",
+    "cardBrand": "MASTERCARD"
+}, {
+    "id": "429024",
+    "name": "HSBC EU Merchant ACS - 429024",
+    "cardBrand": "VISA"
+}, {
+    "id": "518644",
+    "name": "HSBC EU Merchant ACS - 518644",
+    "cardBrand": "MASTERCARD"
+}, {
+    "id": "555333",
+    "name": "MC Centinel Test Acquirer - 555333",
+    "cardBrand": "MASTERCARD"
+}, {
+    "id": "992006",
+    "name": "MC DS Test Acquirer - 992006",
+    "cardBrand": "MASTERCARD"
+}, {
+    "id": "541258",
+    "name": "MC MerchantACS JNCB - 541258",
+    "cardBrand": "MASTERCARD"
+}, {
+    "id": "99999999",
+    "name": "MC PayPass MerchantACS - 99999999",
+    "cardBrand": "VISA"
+}, {
+    "id": "540436",
+    "name": "MC Valfac - 540436",
+    "cardBrand": "MASTERCARD"
+}, {
+    "id": "541769",
+    "name": "MC Valfac - 541769",
+    "cardBrand": "MASTERCARD"
+}, {
+    "id": "541234",
+    "name": "MasterCard New DS Test Acquirer - 541234",
+    "cardBrand": "MASTERCARD"
+}, {
+    "id": "518664",
+    "name": "Mastercard Valfac - 518664",
+    "cardBrand": "MASTERCARD"
+}, {
+    "id": "12345678",
+    "name": "MerchantACS - FifthThird - 12345678",
+    "cardBrand": "VISA"
+}, {
+    "id": "88889999",
+    "name": "MerchantACS CentinelTest - Visa - 88889999",
+    "cardBrand": "VISA"
+}, {
+    "id": "88887777",
+    "name": "MerchantACS Centineltest - MC - 88887777",
+    "cardBrand": "MASTERCARD"
+}, {
+    "id": "446365",
+    "name": "MerchantACS Elavon - 446365",
+    "cardBrand": "VISA"
+}, {
+    "id": "518422",
+    "name": "MerchantACS Elavon - 518422",
+    "cardBrand": "MASTERCARD"
+}, {
+    "id": "434677",
+    "name": "MerchantACS HDFC - 434677",
+    "cardBrand": "VISA"
+}, {
+    "id": "556042",
+    "name": "MerchantACS HDFC - 556042",
+    "cardBrand": "MASTERCARD"
+}, {
+    "id": "447747",
+    "name": "MerchantACS ICICI - 447747",
+    "cardBrand": "VISA"
+}, {
+    "id": "517653",
+    "name": "MerchantACS ICICI - 517653",
+    "cardBrand": "MASTERCARD"
+}, {
+    "id": "542930",
+    "name": "NCBJ MasterCard Valfac Test - 542930",
+    "cardBrand": "MASTERCARD"
+}, {
+    "id": "888888",
+    "name": "Navitaire Bank of Islam - 888888",
+    "cardBrand": "VISA"
+}, {
+    "id": "555334",
+    "name": "Orbitz Test - 555334",
+    "cardBrand": "MASTERCARD"
+}, {
+    "id": "404255",
+    "name": "Piraeus Bank S.A. - 404255",
+    "cardBrand": "VISA"
+}, {
+    "id": "408532",
+    "name": "ReD Visa PIT Test - 408532",
+    "cardBrand": "VISA"
+}, {
+    "id": "8888888",
+    "name": "ReDEU Merchant ACS - 8888888",
+    "cardBrand": "MASTERCARD"
+}, {
+    "id": "9999999",
+    "name": "ReDEU Merchant ACS - 9999999",
+    "cardBrand": "VISA"
+}, {
+    "id": "546557",
+    "name": "Skye Bank 546557 MC Test - 546557",
+    "cardBrand": "MASTERCARD"
+}, {
+    "id": "491677",
+    "name": "Streamline Merchant ACS - 491677",
+    "cardBrand": "VISA"
+}, {
+    "id": "999999",
+    "name": "TicketMaster MerchantACS - 999999",
+    "cardBrand": "VISA"
+}, {
+    "id": "444333",
+    "name": "Visa Centinel Test Acquirer - 444333",
+    "cardBrand": "VISA"
+}, {
+    "id": "123",
+    "name": "Visa MerchantACS - 123",
+    "cardBrand": "VISA"
+}, {
+    "id": "405657",
+    "name": "Visa PIT - 405657",
+    "cardBrand": "VISA"
+}, {
+    "id": "424469",
+    "name": "Visa PIT - 424469",
+    "cardBrand": "VISA"
+}, {
+    "id": "483044",
+    "name": "Visa PIT - 483044",
+    "cardBrand": "VISA"
+}, {
+    "id": "492902",
+    "name": "Visa PIT - 492902",
+    "cardBrand": "VISA"
+}, {
+    "id": "454310",
+    "name": "Visa PIT JNCB - 454310",
+    "cardBrand": "VISA"
+}, {
+    "id": "400000",
+    "name": "Visa PIT Neoworks - 400000",
+    "cardBrand": "VISA"
+}, {
+    "id": "439349",
+    "name": "Visa PIT Planet Payment - 439349",
+    "cardBrand": "VISA"
+}, {
+    "id": "1234",
+    "name": "atc-visa - 1234",
+    "cardBrand": "VISA"
+}]
+}

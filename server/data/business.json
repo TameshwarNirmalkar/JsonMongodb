@@ -1,0 +1,260 @@
+{
+    "categories": {
+        "categories": [{
+            "code": "10",
+            "name": "Accommodations",
+            "description": "Accommodations",
+            "businessType": "MRCHNT"
+        }, {
+            "code": "11",
+            "name": "Amusement, Recreation Activities",
+            "description": "Amusement, Recreation Activities",
+            "businessType": "MRCHNT"
+        }, {
+            "code": "12",
+            "name": "Arts and Craft Stores",
+            "description": "Arts and Craft Stores",
+            "businessType": "MRCHNT"
+        }, {
+            "code": "13",
+            "name": "Automotive Retail",
+            "description": "Automotive Retail",
+            "businessType": "MRCHNT"
+        }, {
+            "code": "14",
+            "name": "Baby",
+            "description": "Baby",
+            "businessType": "MRCHNT"
+        }, {
+            "code": "15",
+            "name": "Book Stores",
+            "description": "Book Stores",
+            "businessType": "MRCHNT"
+        }, {
+            "code": "16",
+            "name": "Business to Business",
+            "description": "Business to Business",
+            "businessType": "MRCHNT"
+        }, {
+            "code": "17",
+            "name": "Camera/Photography Supplies",
+            "description": "Camera/Photography Supplies",
+            "businessType": "MRCHNT"
+        }, {
+            "code": "18",
+            "name": "Communications, Telecommunications, Cable Services",
+            "description": "Communications, Telecommunications, Cable Services",
+            "businessType": "MRCHNT"
+        }, {
+            "code": "19",
+            "name": "Computer/Software Stores",
+            "description": "Computer/Software Stores",
+            "businessType": "MRCHNT"
+        }, {
+            "code": "20",
+            "name": "Cosmetics and Beauty Services",
+            "description": "Cosmetics and Beauty Services",
+            "businessType": "MRCHNT"
+        }, {
+            "code": "21",
+            "name": "Department Stores",
+            "description": "Department Stores",
+            "businessType": "MRCHNT"
+        }, {
+            "code": "22",
+            "name": "Eating Places",
+            "description": "Eating Places",
+            "businessType": "MRCHNT"
+        }, {
+            "code": "23",
+            "name": "Financial Services",
+            "description": "Financial Services",
+            "businessType": "MRCHNT"
+        }, {
+            "code": "24",
+            "name": "Florists",
+            "description": "Florists",
+            "businessType": "MRCHNT"
+        }, {
+            "code": "25",
+            "name": "Giftware/Houseware/Card Shops",
+            "description": "Giftware/Houseware/Card Shops",
+            "businessType": "MRCHNT"
+        }, {
+            "code": "26",
+            "name": "Government Services",
+            "description": "Government Services",
+            "businessType": "MRCHNT"
+        }, {
+            "code": "27",
+            "name": "Health/Beauty/Medical Supplies",
+            "description": "Health/Beauty/Medical Supplies",
+            "businessType": "MRCHNT"
+        }, {
+            "code": "28",
+            "name": "Home Improvement Centers",
+            "description": "Home Improvement Centers",
+            "businessType": "MRCHNT"
+        }, {
+            "code": "29",
+            "name": "Mail Order/Telephone Order Providers",
+            "description": "Mail Order/Telephone Order Providers",
+            "businessType": "MRCHNT"
+        }, {
+            "code": "30",
+            "name": "Maintenance and Repair Services",
+            "description": "Maintenance and Repair Services",
+            "businessType": "MRCHNT"
+        }, {
+            "code": "31",
+            "name": "Manufacturing",
+            "description": "Manufacturing",
+            "businessType": "MRCHNT"
+        }, {
+            "code": "32",
+            "name": "Miscellaneous",
+            "description": "Miscellaneous",
+            "businessType": "MRCHNT"
+        }, {
+            "code": "33",
+            "name": "Miscellaneous Apparel",
+            "description": "Miscellaneous Apparel",
+            "businessType": "MRCHNT"
+        }, {
+            "code": "34",
+            "name": "Miscellaneous Educational Services",
+            "description": "Miscellaneous Educational Services",
+            "businessType": "MRCHNT"
+        }, {
+            "code": "35",
+            "name": "Miscellaneous Entertainment Recreation",
+            "description": "Miscellaneous Entertainment Recreation",
+            "businessType": "MRCHNT"
+        }, {
+            "code": "36",
+            "name": "Miscellaneous Personal Services",
+            "description": "Miscellaneous Personal Services",
+            "businessType": "MRCHNT"
+        }, {
+            "code": "37",
+            "name": "Miscellaneous Professional Services",
+            "description": "Miscellaneous Professional Services",
+            "businessType": "MRCHNT"
+        }, {
+            "code": "38",
+            "name": "Miscellaneous Vehicle Sales",
+            "description": "Miscellaneous Vehicle Sales",
+            "businessType": "MRCHNT"
+        }, {
+            "code": "39",
+            "name": "Music and Videos",
+            "description": "Music and Videos",
+            "businessType": "MRCHNT"
+        }, {
+            "code": "40",
+            "name": "Nonprofit",
+            "description": "Nonprofit",
+            "businessType": "MRCHNT"
+        }, {
+            "code": "41",
+            "name": "Other Transportation Services",
+            "description": "Other Transportation Services",
+            "businessType": "MRCHNT"
+        }, {
+            "code": "42",
+            "name": "Pet Stores",
+            "description": "Pet Stores",
+            "businessType": "MRCHNT"
+        }, {
+            "code": "43",
+            "name": "Religious, Civic, and Professional Organizations",
+            "description": "Religious, Civic, and Professional Organizations",
+            "businessType": "MRCHNT"
+        }, {
+            "code": "44",
+            "name": "Software Production, Network Services and Data Processing",
+            "description": "Software Production, Network Services and Data Processing",
+            "businessType": "MRCHNT"
+        }, {
+            "code": "45",
+            "name": "Sporting Goods/Apparel/Footware",
+            "description": "Sporting Goods/Apparel/Footware",
+            "businessType": "MRCHNT"
+        }, {
+            "code": "46",
+            "name": "T+E Airlines",
+            "description": "T+E Airlines",
+            "businessType": "MRCHNT"
+        }, {
+            "code": "47",
+            "name": "T+E Vehicle Rental",
+            "description": "T+E Vehicle Rental",
+            "businessType": "MRCHNT"
+        }, {
+            "code": "48",
+            "name": "Toy Stores",
+            "description": "Toy Stores",
+            "businessType": "MRCHNT"
+        }, {
+            "code": "49",
+            "name": "Travel Agencies and Tour Operators",
+            "description": "Travel Agencies and Tour Operators",
+            "businessType": "MRCHNT"
+        }, {
+            "code": "50",
+            "name": "Unknown",
+            "description": "Unknown",
+            "businessType": "MRCHNT"
+        }, {
+            "code": "51",
+            "name": "Utilities",
+            "description": "Utilities",
+            "businessType": "MRCHNT"
+        }, {
+            "code": "52",
+            "name": "Variety/General Merchandise Stores",
+            "description": "Variety/General Merchandise Stores",
+            "businessType": "MRCHNT"
+        }, {
+            "code": "53",
+            "name": "Wholesale Trade",
+            "description": "Wholesale Trade",
+            "businessType": "MRCHNT"
+        }]
+    },
+    "customerRanges": {
+        "customerRanges": [{
+            "code": "009",
+            "lowCount": 1,
+            "highCount": 20
+        }, {
+            "code": "010",
+            "lowCount": 21,
+            "highCount": 100
+        }, {
+            "code": "011",
+            "lowCount": 101,
+            "highCount": 200
+        }, {
+            "code": "012",
+            "lowCount": 201,
+            "highCount": 1000
+        }, {
+            "code": "013",
+            "lowCount": 1001,
+            "highCount": 10000
+        }, {
+            "code": "014",
+            "lowCount": 10001,
+            "highCount": 50000
+        }, {
+            "code": "015",
+            "lowCount": 50001,
+            "highCount": 100000
+        }, {
+            "code": "016",
+            "lowCount": 100001,
+            "highCount": null
+        }]
+    }
+}

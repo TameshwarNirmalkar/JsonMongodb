@@ -1,0 +1,104 @@
+{
+    "org2": {
+        "acquirerRelationships": {
+            "acquirerRelationships": [{
+                "merchantAcqCode": "967a63beaa8444c69d3f78b904ae6a17",
+                "status": {
+                    "status": "ACTIVE"
+                },
+                "assignedMerchantId": "6666666",
+                "unknownAcqFlag": false,
+                "acquirerId": "411111",
+                "paymentBrandCode": null,
+                "currencyCodes": [{
+                    "currencyCode": "DFT"
+                }],
+                "readonly": false,
+                "updateHistory": null,
+                "passwordProvided": false
+            }, {
+                "merchantAcqCode": "f311c42188f1405381c2e21a9bba8e4c",
+                "status": {
+                    "status": "ACTIVE"
+                },
+                "assignedMerchantId": "333333",
+                "unknownAcqFlag": false,
+                "acquirerId": "411111",
+                "paymentBrandCode": null,
+                "currencyCodes": [{
+                    "currencyCode": "DFT"
+                }],
+                "readonly": false,
+                "updateHistory": null,
+                "passwordProvided": false
+            }, {
+                "merchantAcqCode": "7261f8e1d3d5454c944a3409545fc26a",
+                "status": {
+                    "status": "ACTIVE"
+                },
+                "assignedMerchantId": "66666",
+                "unknownAcqFlag": false,
+                "acquirerId": "411111",
+                "paymentBrandCode": null,
+                "currencyCodes": [{
+                    "currencyCode": "DFT"
+                }],
+                "readonly": false,
+                "updateHistory": null,
+                "passwordProvided": false
+            }, {
+                "merchantAcqCode": "b601ea44e1704a448da22cdf4079f663",
+                "status": {
+                    "status": "ACTIVE"
+                },
+                "assignedMerchantId": "323",
+                "unknownAcqFlag": false,
+                "acquirerId": "123457",
+                "paymentBrandCode": "VISA",
+                "currencyCodes": [{
+                    "currencyCode": "AFA"
+                }],
+                "readonly": false,
+                "updateHistory": null,
+                "passwordProvided": false
+            }, {
+                "merchantAcqCode": "1cde5b9a7dbb408cb4b8a86a6d58589e",
+                "status": {
+                    "status": "PENDING_MERCHANT_ONBOARDING"
+                },
+                "assignedMerchantId": "123",
+                "unknownAcqFlag": false,
+                "acquirerId": "512262",
+                "paymentBrandCode": "MASTERCARD",
+                "currencyCodes": [{
+                    "currencyCode": "AFA"
+                }],
+                "readonly": true,
+                "updateHistory": null,
+                "passwordProvided": false
+            }, {
+                "merchantAcqCode": "e2f97d3fcec64b83a5e3738e7a52af09",
+                "status": {
+                    "status": "ACTIVE"
+                },
+                "assignedMerchantId": "23",
+                "unknownAcqFlag": false,
+                "acquirerId": "408532",
+                "paymentBrandCode": "VISA",
+                "currencyCodes": [{
+                    "currencyCode": "DZD"
+                }],
+                "readonly": false,
+                "updateHistory": null,
+                "passwordProvided": false
+            }]
+        },
+        "advancedCheckouts": [
+            {
+                "orgId": "4f434dbdc6994b498dd14cc301cc618d",
+                "cardBrandType": "VISA",
+                "advancedCheckoutEnabled": true
+            }
+        ]
+    }
+}

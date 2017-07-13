@@ -1,0 +1,64 @@
+{
+    "originUrls": [
+        {
+            "originUrlId": "8a1d0157588cd8c00158922014ef0000",
+            "originUrlAddress": "http://www.bestbuy.com",
+            "orgId": "org2"
+        },
+        {
+            "originUrlId": "1",
+            "originUrlAddress": "http://www.smoothingking.com",
+            "orgId": "org2"
+        },
+        {
+            "originUrlId": "8a1d0157588cd8c0015892219a4f0001",
+            "originUrlAddress": "http://www.target.com",
+            "orgId": "org2"
+        },
+        {
+            "originUrlId": "8a1d0157584ac2b601584f4f11640002",
+            "originUrlAddress": "www.0012b.com",
+            "orgId": "org2"
+        },
+        {
+            "originUrlId": "8a1d01575850776d0158546068dc0002",
+            "originUrlAddress": "www.6threcordFINALVERISON.com",
+            "orgId": "org2"
+        },
+        {
+            "originUrlId": "8a1d0157588cd8c00158922014ef0005",
+            "originUrlAddress": "http://sandbox.bestbuy.com",
+            "orgId": "org2"
+        },
+        {
+            "originUrlId": "8a1d0157588cd8c00158922014ef0006",
+            "originUrlAddress": "http://extra01.com",
+            "orgId": "org2"
+        },
+        {
+            "originUrlId": "8a1d0157588cd8c00158922014ef0007",
+            "originUrlAddress": "http://extra02.com",
+            "orgId": "org2"
+        },
+        {
+            "originUrlId": "8a1d0157588cd8c00158922014ef0008",
+            "originUrlAddress": "http://extra03.com",
+            "orgId": "org2"
+        },
+        {
+            "originUrlId": "8a1d0157588cd8c00158922014ef0009",
+            "originUrlAddress": "http://extra04.com",
+            "orgId": "org2"
+        },
+        {
+            "originUrlId": "8a1d0157588cd8c00158922014ef0010",
+            "originUrlAddress": "http://extra05.com",
+            "orgId": "org2"
+        },
+        {
+            "originUrlId": "8a1d0157588cd8c00158922014ef0011",
+            "originUrlAddress": "http://extra06.com",
+            "orgId": "org2"
+        }
+    ]
+}

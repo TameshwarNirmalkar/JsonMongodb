@@ -1,0 +1,311 @@
+[{
+    "shippingProfiles": [{
+        "shippingProfileId": 367224,
+        "rules": [{
+            "level": "RGN",
+            "type": "INCLD",
+            "code": "A"
+        }, {
+            "level": "RGN",
+            "type": "INCLD",
+            "code": "AI"
+        }, {
+            "level": "CNTRY",
+            "type": "EXCLD",
+            "code": "AF"
+        }, {
+            "level": "CNTRY",
+            "type": "EXCLD",
+            "code": "BD"
+        }, {
+            "level": "CNTRY",
+            "type": "EXCLD",
+            "code": "BT"
+        }, {
+            "level": "CNTRY",
+            "type": "EXCLD",
+            "code": "BN"
+        }, {
+            "level": "CNTRY",
+            "type": "EXCLD",
+            "code": "KH"
+        }, {
+            "level": "RGN",
+            "type": "INCLD",
+            "code": "CA"
+        }, {
+            "level": "RGN",
+            "type": "INCLD",
+            "code": "EM"
+        }, {
+            "level": "RGN",
+            "type": "INCLD",
+            "code": "NA"
+        }, {
+            "level": "CNTRY",
+            "type": "INCLD",
+            "code": "US"
+        }, {
+            "level": "SBDVSN",
+            "type": "EXCLD",
+            "code": "US-AK"
+        }],
+        "code": "SP-0002",
+        "name": "Profile 1",
+        "preferred": true
+    }, {
+        "shippingProfileId": 367225,
+        "rules": [{
+            "level": "RGN",
+            "type": "INCLD",
+            "code": "AI"
+        }],
+        "code": "SP-0003",
+        "name": "Profile 2",
+        "preferred": false
+    }, {
+        "shippingProfileId": 367226,
+        "rules": [],
+        "code": "SP-0004",
+        "name": "Profile 3",
+        "preferred": false
+    }, {
+        "shippingProfileId": 367227,
+        "rules": [],
+        "code": "SP-0005",
+        "name": "Profile 4",
+        "preferred": false
+    }, {
+        "shippingProfileId": 367228,
+        "rules": [],
+        "code": "SP-0006",
+        "name": "Profile 5",
+        "preferred": false
+    }, {
+        "shippingProfileId": 367230,
+        "rules": [],
+        "code": "SP-0007",
+        "name": "Profile 6",
+        "preferred": false
+    }, {
+        "shippingProfileId": 367231,
+        "rules": [],
+        "code": "SP-0008",
+        "name": "Profile 7",
+        "preferred": false
+    }, {
+        "shippingProfileId": 367232,
+        "rules": [],
+        "code": "SP-0009",
+        "name": "Profile 8",
+        "preferred": false
+    }, {
+        "shippingProfileId": 367234,
+        "rules": [{
+            "level": "RGN",
+            "type": "INCLD",
+            "code": "AI"
+        }, {
+            "level": "CNTRY",
+            "type": "EXCLD",
+            "code": "BD"
+        }, {
+            "level": "RGN",
+            "type": "INCLD",
+            "code": "A"
+        }],
+        "code": "SP-0011",
+        "name": "Profile 10",
+        "preferred": false
+    }, {
+        "shippingProfileId": 367235,
+        "rules": [{
+            "level": "RGN",
+            "type": "INCLD",
+            "code": "A"
+        }, {
+            "level": "RGN",
+            "type": "INCLD",
+            "code": "AI"
+        }, {
+            "level": "RGN",
+            "type": "INCLD",
+            "code": "CA"
+        }, {
+            "level": "CNTRY",
+            "type": "EXCLD",
+            "code": "AW"
+        }, {
+            "level": "CNTRY",
+            "type": "EXCLD",
+            "code": "BS"
+        }],
+        "code": "SP-0012",
+        "name": "Profile 11",
+        "preferred": false
+    }, {
+        "shippingProfileId": 367236,
+        "rules": [{
+            "level": "RGN",
+            "type": "INCLD",
+            "code": "AI"
+        }, {
+            "level": "RGN",
+            "type": "INCLD",
+            "code": "CA"
+        }, {
+            "level": "CNTRY",
+            "type": "EXCLD",
+            "code": "AG"
+        }, {
+            "level": "RGN",
+            "type": "INCLD",
+            "code": "A"
+        }],
+        "code": "SP-0013",
+        "name": "Profile 12",
+        "preferred": false
+    }, {
+        "shippingProfileId": 367237,
+        "rules": [],
+        "code": "SP-0014",
+        "name": "Profile 13",
+        "preferred": false
+    }, {
+        "shippingProfileId": 367238,
+        "rules": [],
+        "code": "SP-0015",
+        "name": "Profile 14",
+        "preferred": false
+    }, {
+        "shippingProfileId": 367239,
+        "rules": [],
+        "code": "SP-0016",
+        "name": "Profile 15",
+        "preferred": false
+    }, {
+        "shippingProfileId": 367241,
+        "rules": [],
+        "code": "SP-0017",
+        "name": "Profile 16",
+        "preferred": false
+    }, {
+        "shippingProfileId": 367242,
+        "rules": [],
+        "code": "SP-0018",
+        "name": "Profile 17",
+        "preferred": false
+    }, {
+        "shippingProfileId": 367243,
+        "rules": [],
+        "code": "SP-0019",
+        "name": "Profile 18",
+        "preferred": false
+    }, {
+        "shippingProfileId": 367245,
+        "rules": [],
+        "code": "SP-0020",
+        "name": "Profile 19",
+        "preferred": false
+    }, {
+        "shippingProfileId": 367246,
+        "rules": [],
+        "code": "SP-0021",
+        "name": "Profile 20",
+        "preferred": false
+    }, {
+        "shippingProfileId": 367247,
+        "rules": [],
+        "code": "SP-0022",
+        "name": "Profile 21",
+        "preferred": false
+    }, {
+        "shippingProfileId": 367248,
+        "rules": [],
+        "code": "SP-0023",
+        "name": "Profile 22",
+        "preferred": false
+    }, {
+        "shippingProfileId": 367249,
+        "rules": [],
+        "code": "SP-0024",
+        "name": "Profile 24",
+        "preferred": false
+    }, {
+        "shippingProfileId": 367250,
+        "rules": [],
+        "code": "SP-0025",
+        "name": "Profile 25",
+        "preferred": false
+    }, {
+        "shippingProfileId": 367252,
+        "rules": [],
+        "code": "SP-0026",
+        "name": "Profile 26",
+        "preferred": false
+    }, {
+        "shippingProfileId": 3877392,
+        "rules": [{
+            "level": "RGN",
+            "type": "INCLD",
+            "code": "NA"
+        }],
+        "code": "SP-0027",
+        "name": "Ray ray Test",
+        "preferred": false
+    }]
+}, {
+    "shippingProfileId": 367224,
+    "rules": [{
+        "level": "RGN",
+        "type": "INCLD",
+        "code": "A"
+    }, {
+        "level": "RGN",
+        "type": "INCLD",
+        "code": "AI"
+    }, {
+        "level": "CNTRY",
+        "type": "EXCLD",
+        "code": "AF"
+    }, {
+        "level": "CNTRY",
+        "type": "EXCLD",
+        "code": "BD"
+    }, {
+        "level": "CNTRY",
+        "type": "EXCLD",
+        "code": "BT"
+    }, {
+        "level": "CNTRY",
+        "type": "EXCLD",
+        "code": "BN"
+    }, {
+        "level": "CNTRY",
+        "type": "EXCLD",
+        "code": "KH"
+    }, {
+        "level": "RGN",
+        "type": "INCLD",
+        "code": "CA"
+    }, {
+        "level": "RGN",
+        "type": "INCLD",
+        "code": "EM"
+    }, {
+        "level": "RGN",
+        "type": "INCLD",
+        "code": "NA"
+    }, {
+        "level": "CNTRY",
+        "type": "INCLD",
+        "code": "US"
+    }, {
+        "level": "SBDVSN",
+        "type": "EXCLD",
+        "code": "US-AK"
+    }],
+    "code": "SP-0002",
+    "name": "Profile 1",
+    "preferred": true
+}]

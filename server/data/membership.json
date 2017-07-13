@@ -1,0 +1,151 @@
+{
+    "me": {
+        "memberships": [
+            {
+                "organizationId": "6a02ae263e2b436d9c5a88fd1dbaddcc",
+                "userAccountId": "rayray",
+                "userRole": "ADMINISTRATOR",
+                "status": "CONNECTED",
+                "statusDate": 1482860843000
+            }
+        ],
+        "organizations": [
+            {
+                "threeDsEnabled": true,
+                "businessProfileComplete": false,
+                "id": "6a02ae263e2b436d9c5a88fd1dbaddcc",
+                "parentId": null,
+                "name": "http://google.com",
+                "country": "US",
+                "subdivision": "US-AK",
+                "productionRequestStatus": "APPROVED",
+                "type": "MERCHANT",
+                "childOrganizationList": [],
+                "organizationClientInfoList": [
+                    {
+                        "environment": "SANDBOX",
+                        "orgId": "6a02ae263e2b436d9c5a88fd1dbaddcc",
+                        "orgClientId": "TpzwGCfo1mFAJXUE1_YoEVoeDKP8Ly7GF90Q2B_W97459c21"
+                    },
+                    {
+                        "environment": "PRODUCTION",
+                        "orgId": "6a02ae263e2b436d9c5a88fd1dbaddcc",
+                        "orgClientId": "lT6dESIi0h5ebdGDSVpIRX9R3nPuFk9ltg6_bU8-560a6e38"
+                    }
+                ]
+            }
+        ],
+        "userAccounts": [
+            {
+                "contact": {
+                    "firstName": "Ray",
+                    "lastName": "ray",
+                    "email": "rachmasterpasstest+rayray@gmail.com",
+                    "phone": "2345678908"
+                },
+                "id": "rayray11",
+                "username": "rayray11",
+                "locale": "en_US"
+            }
+        ]
+    },
+    "org2": {
+        "memberships": [
+            {
+                "organizationId": "37819eba145345f09837e437cd7b121a",
+                "userAccountId": "kbryant0noa",
+                "userRole": "DEVELOPER",
+                "status": "CONNECTED",
+                "statusDate": null
+            },
+            {
+                "organizationId": "37819eba145345f09837e437cd7b121a",
+                "userAccountId": "nmateten0noa",
+                "userRole": "DEVELOPER",
+                "status": "CONNECTED",
+                "statusDate": null
+            },
+            {
+                "organizationId": "37819eba145345f09837e437cd7b121a",
+                "userAccountId": "wgretzky0noa",
+                "userRole": "DEVELOPER",
+                "status": "CONNECTED",
+                "statusDate": null
+            },
+            {
+                "organizationId": "37819eba145345f09837e437cd7b121a",
+                "userAccountId": "tbrady0noa",
+                "userRole": "DEVELOPER",
+                "status": "CONNECTED",
+                "statusDate": null
+            },
+            {
+                "organizationId": "37819eba145345f09837e437cd7b121a",
+                "userAccountId": "noahMerStage",
+                "userRole": "ADMINISTRATOR",
+                "status": "CONNECTED",
+                "statusDate": null
+            }
+        ],
+        "organizations": [],
+        "userAccounts": [
+            {
+                "id": "kbryant0noa",
+                "username": "kbryant0noa",
+                "locale": "en_US",
+                "contact": {
+                    "firstName": "Kobe",
+                    "lastName": "Bryant",
+                    "email": null,
+                    "phone": null
+                }
+            },
+            {
+                "id": "nmateten0noa",
+                "username": "nmateten0noa",
+                "locale": "en_US",
+                "contact": {
+                    "firstName": "Noah",
+                    "lastName": "Mateten",
+                    "email": null,
+                    "phone": null
+                }
+            },
+            {
+                "id": "wgretzky0noa",
+                "username": "wgretzky0noa",
+                "locale": "en_US",
+                "contact": {
+                    "firstName": "Wayne",
+                    "lastName": "Gretzky",
+                    "email": null,
+                    "phone": null
+                }
+            },
+            {
+                "id": "tbrady0noa",
+                "username": "tbrady0noa",
+                "locale": "en_US",
+                "contact": {
+                    "firstName": "Tom",
+                    "lastName": "Brady",
+                    "email": null,
+                    "phone": null
+                }
+            },
+            {
+                "id": "noahMerStage",
+                "username": "noahMerStage",
+                "locale": "en_US",
+                "contact": {
+                    "firstName": "Noah",
+                    "lastName": "Mateen",
+                    "email": null,
+                    "phone": null
+                }
+            }
+        ],
+        "totalPages": 5,
+        "totalElements": 5
+    }
+}

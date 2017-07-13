@@ -1,0 +1,236 @@
+{
+    "securityQuestionsObject": {
+        "securityQuestions": [
+            {
+                "question": "In what town or city was your mother born?",
+                "locale": "en_US",
+                "questionId": "1"
+            },
+            {
+                "question": "What was your grandfather's occupation?",
+                "locale": "en_US",
+                "questionId": "2"
+            },
+            {
+                "question": "What is your eldest sibling's middle name?",
+                "locale": "en_US",
+                "questionId": "3"
+            },
+            {
+                "question": "What is your eldest cousin's first and last name?",
+                "locale": "en_US",
+                "questionId": "4"
+            },
+            {
+                "question": "In what city or town did your mother and father meet?",
+                "locale": "en_US",
+                "questionId": "5"
+            },
+            {
+                "question": "What was the last name of your third grade teacher?",
+                "locale": "en_US",
+                "questionId": "6"
+            },
+            {
+                "question": "What was your childhood nickname?",
+                "locale": "en_US",
+                "questionId": "7"
+            },
+            {
+                "question": "In what city did you meet your spouse/significant other?",
+                "locale": "en_US",
+                "questionId": "8"
+            },
+            {
+                "question": "What is the name of your favorite childhood friend?",
+                "locale": "en_US",
+                "questionId": "9"
+            },
+            {
+                "question": "What is the street name of the house you grew up in?",
+                "locale": "en_US",
+                "questionId": "10"
+            },
+            {
+                "question": "What was your favorite place to visit as a child?",
+                "locale": "en_US",
+                "questionId": "11"
+            },
+            {
+                "question": "What time of the day were you born?",
+                "locale": "en_US",
+                "questionId": "12"
+            },
+            {
+                "question": "What was the first concert you attended?",
+                "locale": "en_US",
+                "questionId": "13"
+            },
+            {
+                "question": "What is your mother's middle name?",
+                "locale": "en_US",
+                "questionId": "14"
+            }
+        ]
+    },
+    "userAlias1": {
+        "securityQuestions": [
+            {
+                "securityQuestionId": 0,
+                "referenceSecurityQuestionId": 0,
+                "question": "In what town or city was your mother born?",
+                "locale": "en_US"
+            },
+            {
+                "securityQuestionId": 1,
+                "referenceSecurityQuestionId": 1,
+                "question": "What was your grandfather's occupation?",
+                "locale": "en_US"
+            }
+        ],
+        "nonce":"2c906dd0569e167e01569e209c430000",
+        "ldapId": "USERLDAPIDaaaaaaaaaaaa1234567890"
+
+    },
+    "userAlias2": {
+        "securityQuestions": [
+            {
+                "securityQuestionId": 2,
+                "referenceSecurityQuestionId": 2,
+                "question": "What is your eldest sibling's middle name?",
+                "locale": "en_US"
+            },
+            {
+                "securityQuestionId": 3,
+                "referenceSecurityQuestionId": 3,
+                "question": "What is your eldest cousin's first and last name?",
+                "locale": "en_US"
+            }
+        ],
+        "nonce":"2c906dd0569e167e01569e209c430000",
+        "ldapId": "USERLDAPIDbbbbbbbbbbbb1234567890"
+    },
+    "userAlias3": {
+        "securityQuestions": [
+            {
+                "securityQuestionId": 4,
+                "referenceSecurityQuestionId": 4,
+                "question": "In what town or city was your mother born?",
+                "locale": "en_US"
+            },
+            {
+                "securityQuestionId": 5,
+                "referenceSecurityQuestionId": 5,
+                "question": "What was your grandfather's occupation?",
+                "locale": "en_US"
+            }
+        ],
+        "nonce":"2c906dd0569e167e01569e209c430000",
+        "ldapId": "USERLDAPIDcccccccccccc1234567890"
+    },
+    "expired": {
+        "securityQuestions": [
+            {
+                "securityQuestionId": 4,
+                "referenceSecurityQuestionId": 4,
+                "question": "In what town or city was your mother born?",
+                "locale": "en_US"
+            },
+            {
+                "securityQuestionId": 5,
+                "referenceSecurityQuestionId": 5,
+                "question": "What was your grandfather's occupation?",
+                "locale": "en_US"
+            }
+        ],
+        "nonce":"2c906dd0569e167e01569e209c430000",
+        "ldapId": "expired"
+    },
+    "locked": {
+        "securityQuestions": [
+            {
+                "securityQuestionId": 4,
+                "referenceSecurityQuestionId": 4,
+                "question": "In what town or city was your mother born?",
+                "locale": "en_US"
+            },
+            {
+                "securityQuestionId": 5,
+                "referenceSecurityQuestionId": 5,
+                "question": "What was your grandfather's occupation?",
+                "locale": "en_US"
+            }
+        ],
+        "nonce":"2c906dd0569e167e01569e209c430000",
+        "ldapId": "locked"
+    },
+    "failed": {
+        "securityQuestions": [
+            {
+                "securityQuestionId": 4,
+                "referenceSecurityQuestionId": 4,
+                "question": "In what town or city was your mother born?",
+                "locale": "en_US"
+            },
+            {
+                "securityQuestionId": 5,
+                "referenceSecurityQuestionId": 5,
+                "question": "What was your grandfather's occupation?",
+                "locale": "en_US"
+            }
+        ],
+        "nonce":"2c906dd0569e167e01569e209c430000",
+        "ldapId": "failed"
+    },
+    "incomplete": {
+        "securityQuestions": [
+            {
+                "securityQuestionId": 4,
+                "referenceSecurityQuestionId": 4,
+                "question": "In what town or city was your mother born?",
+                "locale": "en_US"
+            },
+            {
+                "securityQuestionId": 5,
+                "referenceSecurityQuestionId": 5,
+                "question": "What was your grandfather's occupation?",
+                "locale": "en_US"
+            }
+        ],
+        "nonce":"2c906dd0569e167e01569e209c430000",
+        "ldapId": "incomplete"
+    },
+    "fake": {
+        "securityQuestions": [
+            {
+                "securityQuestionId": 6,
+                "referenceSecurityQuestionId": 6,
+                "question": "In what city or town did your mother and father meet?",
+                "locale": "en_US"
+            },
+            {
+                "securityQuestionId": 7,
+                "referenceSecurityQuestionId": 7,
+                "question": "In what city did you meet your spouse/significant other?",
+                "locale": "en_US"
+            }
+        ],
+        "nonce":"2c906dd0569e167e01569e209c430000",
+        "ldapId": "FAKELDAPIDxxxxxxxxxxxx0987654321"
+    },
+    "correctAnswers": {
+        "userId": "99e1c2f7-a495-4ee6-bc36-e466c22c28ef",
+        "tempPassword": "1234"
+    },
+    "incorrectAnswers": {
+        "error": [
+            {
+                "code": "400",
+                "field": "Security Answers invalid",
+                "message": "Bad Request"
+            }
+        ],
+        "code": "400",
+        "message": "Bad Request"
+    }
+}

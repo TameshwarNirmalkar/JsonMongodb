@@ -1,0 +1,59 @@
+{
+    "paymentBrands": [{
+        "code": "AMEX",
+        "name": "American Express",
+        "desc": "American Express",
+        "threeDsEnableSwitch": false,
+        "transactionEnableSwitch": true,
+        "tokenizationEnableSwitch": false,
+        "cryptoFormats": []
+    }, {
+        "code": "DINERS",
+        "name": "Diners Club",
+        "desc": "Diners Club",
+        "threeDsEnableSwitch": false,
+        "transactionEnableSwitch": true,
+        "tokenizationEnableSwitch": false,
+        "cryptoFormats": []
+    }, {
+        "code": "DISCOVER",
+        "name": "Discover",
+        "desc": "Discover",
+        "threeDsEnableSwitch": false,
+        "transactionEnableSwitch": true,
+        "tokenizationEnableSwitch": false,
+        "cryptoFormats": []
+    }, {
+        "code": "JCB",
+        "name": "JCB",
+        "desc": "JCB",
+        "threeDsEnableSwitch": false,
+        "transactionEnableSwitch": false,
+        "tokenizationEnableSwitch": false,
+        "cryptoFormats": []
+    }, {
+        "code": "MAESTRO",
+        "name": "Maestro",
+        "desc": "Maestro",
+        "threeDsEnableSwitch": false,
+        "transactionEnableSwitch": true,
+        "tokenizationEnableSwitch": true,
+        "cryptoFormats": ["ICC", "UCAF"]
+    }, {
+        "code": "MASTERCARD",
+        "name": "MasterCard",
+        "desc": "MasterCard",
+        "threeDsEnableSwitch": true,
+        "transactionEnableSwitch": true,
+        "tokenizationEnableSwitch": true,
+        "cryptoFormats": ["ICC", "UCAF"]
+    }, {
+        "code": "VISA",
+        "name": "Visa",
+        "desc": "Visa",
+        "threeDsEnableSwitch": true,
+        "transactionEnableSwitch": true,
+        "tokenizationEnableSwitch": true,
+        "cryptoFormats": ["TAVV"]
+    }]
+}

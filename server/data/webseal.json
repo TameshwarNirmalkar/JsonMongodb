@@ -1,0 +1,27 @@
+{
+    "expired": {
+        "responseCode": "PASSWORD_EXPIRED",
+        "responseText": "SUCCESS",
+        "orgInviteCode": "MT123456"
+    },
+    "locked": {
+        "responseCode": "ACCOUNT_LOCKED",
+        "responseText": "SUCCESS",
+        "orgInviteCode": "MT123456"
+    },
+    "failed": {
+        "responseCode": "LOGIN_FAIL",
+        "responseText": "SUCCESS",
+        "orgInviteCode": "MT123456"
+    },
+    "incomplete": {
+        "responseCode": "INCOMPLETE",
+        "responseText": "SUCCESS",
+        "orgInviteCode": "MT123456"
+    },
+    "success": {
+        "responseCode": "LOGIN_SUCCESS",
+        "responseText": "SUCCESS",
+        "orgInviteCode": "MT123456"
+    }
+}

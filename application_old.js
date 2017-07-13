@@ -3,6 +3,8 @@ const Promise = require('bluebird');
 const path = require('path');
 const request = require('request');
 const bodyParser = require('body-parser');
+const logger = require('morgan');
+const cors = require('cors');
 
 const APP_CONSTANT = require('./constant.js');
 
@@ -10,9 +12,11 @@ const server = express();
 const Router = express.Router();
 
 // Set default middlewares (logger, static, cors and no-cache)
-server.use(bodyParser.json());
-server.use( bodyParser.urlencoded({ extended: false }) );
-
+server.use(bodyParser.json({ limit: '50mb' }));
+server.use( bodyParser.urlencoded({ limit: '50mb', extended: true }) );
+server.use(cors());
+server.options('*', cors());
+server.use(logger('dev'));
 server.get('/', (req, res) => {
   res.jsonp(req.query);
 });

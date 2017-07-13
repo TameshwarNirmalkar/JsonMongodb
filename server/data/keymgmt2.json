@@ -1,0 +1,38 @@
+[
+    {
+        "keyId": "KEY00000000000000000000000000000000000",
+        "alias": "defaultSandboxKey",
+        "environment": "SANDBOX",
+        "expiry": 1490909840000,
+        "organizationClientId": "ORG00000000000000000000000000000000000",
+        "onboardingSandboxPrivateKeyAvailable": false,
+        "onboardingSandboxPrivateKeyPasscode": "therealpasswordwillbea20digitguid"
+    },
+    {
+        "keyId": "KEY11111111111111111111111111111111111",
+        "alias": "keyGetTest2",
+        "environment": "SANDBOX",
+        "expiry": 1499459365312,
+        "organizationClientId": "ORG11111111111111111111111111111111111",
+        "onboardingSandboxPrivateKeyAvailable": false,
+        "onboardingSandboxPrivateKeyPasscode": null
+    },
+    {
+        "keyId": "KEY22222222222222222222222222222222222",
+        "alias": "keyGetTest3",
+        "environment": "PRODUCTION",
+        "expiry": 1499458831000,
+        "organizationClientId": "ORG22222222222222222222222222222222222",
+        "onboardingSandboxPrivateKeyAvailable": false,
+        "onboardingSandboxPrivateKeyPasscode": null
+    },
+    {
+        "keyId": "KEY333333333333333333333333333333333333",
+        "alias": "keyGetTest4",
+        "environment": "PRODUCTION",
+        "expiry": 1490909840000,
+        "organizationClientId": "ORG333333333333333333333333333333333333",
+        "onboardingSandboxPrivateKeyAvailable": false,
+        "onboardingSandboxPrivateKeyPasscode": null
+    }
+]

@@ -1,0 +1,38 @@
+{
+    "brands": [
+        {
+            "logo": null,
+            "displayName": "Howdy",
+            "alias": "Hola",
+            "description": "Wow",
+            "brandingCode": "247cb0d8bc284852830856b9c82614d1",
+            "brandingStatus": "PRODUCTION",
+            "sandboxCallbackUrl": "www.callme.com:30001",
+            "productionCallbackUrl": "productionCallback2"
+        },
+        {
+            "logo": {
+                "ref": "http://i.cdn.turner.com/cnn/.e/img/3.0/global/header/hdr-main.png"
+            },
+            "displayName": "FreshquoteFreshquoteFreshquoteFreshquoteFreshquoteFreshquoteFreshquoteFreshquoteFreshquoteFreshquoteFreshquoteFreshquoteFreshquoteFreshquoteFreshquoteFreshquoteFreshquoteFreshquoteFreshquoteFreshquoteFreshquoteFreshquoteFreshquoteFreshquoteFreshquoteFresh",
+            "alias": "CHROMA SPÓLKA Z OGRANICZONA ODPOWIEDZIALNOSCIA SPÓLKA KOMANDYTOWACHROMA SPÓLKA Z OGRANICZONA ODPOWIEDZIALNOSCIA SPÓLKA KOMANDYTOWACHROMA SPÓLKA Z OGRANICZONA ODPOWIEDZIALNOSCIA SPÓLKA KOMANDYTOWACHROMA SPÓLKA Z OGRANICZONA ODPOWIED",
+            "description": "75% off When you buy 3",
+            "brandingCode": "91846f2f8f6348ee81d3ede32de0e379",
+            "brandingStatus": "PRODUCTION_SANDBOX",
+            "sandboxCallbackUrl": "",
+            "productionCallbackUrl": ""
+        },
+        {
+            "logo": {
+                "ref": "http://i.cdn.turner.com/cnn/.e/img/3.0/global/header/hdr-main.png"
+            },
+            "displayName": "点击“完成购物”按钮 若您为客户提供联网结账点击“完成购物”按钮 若您为客户提供联网结账点击“完成购物”按钮 若您为客户提供联网结账点击“完成购物”按钮 若您为客户提供联网结",
+            "alias": "点击“完成购物”按钮 若您为客户提供联网结账点击“完成购物”按钮 若您为客户提供联网结账点击“完成购物”按钮 若您为客户提供联网结账点击“完成购物”按钮 若您为客户提供联网结",
+            "description": "75% off When you buy 3",
+            "brandingCode": "e953138fcfee46d89ba3197047248b86",
+            "brandingStatus": "PRODUCTION_SANDBOX",
+            "sandboxCallbackUrl": "llanfairpwllgwyngyllgogerychwyrndrobwllllantysiliogogogochuchaf.org.uk",
+            "productionCallbackUrl": "productionCallback1"
+        }
+    ]
+}
