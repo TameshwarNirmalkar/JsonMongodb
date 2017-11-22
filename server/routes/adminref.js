@@ -1,7 +1,3 @@
-/**
- * Created by e062110 on 8/1/16.
- */
-
 var router = require('express').Router();
 var statusCode = require('../utils/helpers.js').statusCodes;
 var log = require('../utils/helpers.js').logRequest;
@@ -15,13 +11,13 @@ var debug = 'true'; // Enable to show requests data in debug console
 //////////
 // Data //
 //////////
-var pymtbrand = require('../data/pymtbrand.json');
+var acquirers = require('../data/acquirer.json');
 
 // Get all countries
-router.get('/pymtbrand/v0/payment/paymentBrands', function (req, res) {
+router.get('/adminref/v0/public/portalNotification', function (req, res) {
     if(debug) log(req);
 
-    res.status(statusCode.OK).json(pymtbrand);
+    res.status(statusCode.OK).json({"portalNotifications":[{"portalNotificationId":44,"notificationText":"Stage 1 has R6 code"}]});
 });
 
 module.exports = router;

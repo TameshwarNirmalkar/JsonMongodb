@@ -8,7 +8,8 @@
     "mongod": "mongod --dbpath /Users/e068816/SampleProject/MongoDbJson/data/db/; mongo;",
     "mongoclient": "mongo",
     "nodemon": "nodemon application.js & nodemon ./app/app.js",
-    "approute": "nodemon application.js"
+    "approute": "nodemon server.js",
+    "debug": "nodemon --debug ./server 8181"
   },
   "main": "index.js",
   "dependencies": {

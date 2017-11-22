@@ -42,8 +42,8 @@ app.use('/brands', BrandsController);
 // app.use('/shippingProfiles', ShippingProfilesController);
 
 // businessProfile API
-const BusinessProfileController = require(path.resolve(__dirname+'/businessprofile/BusinessProfileController') );
-app.use('/merchantOrgDetails', BusinessProfileController);
+const OrgmgmtController = require(path.resolve(__dirname+'/orgmgmt/OrgmgmtController') );
+app.use('/merchantOrgDetails', OrgmgmtController);
 
 // productionAccess MODULE
 // const ProductionAccessController = require(path.resolve(__dirname+'/productionaccess/ProductionAccessController') );

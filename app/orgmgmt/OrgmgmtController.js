@@ -6,11 +6,11 @@ router.use(bodyParser.urlencoded({ extended: false }));
 router.use( bodyParser.json() ) ;
 const db = require(path.resolve(__dirname+'/db') ); //Database connection name
 
-const BusinessProfileSchema = require( path.resolve(__dirname+'/BusinessProfileSchema') );
+const OrgmgmtSchema = require( path.resolve(__dirname+'/OrgmgmtSchema') );
 
 // RETURNS ALL THE USERS IN THE DATABASE
 router.get('/', function (req, res) {
-    BusinessProfileSchema.find({}, function (err, users) {
+    OrgmgmtSchema.find({}, function (err, users) {
         if (err) return res.status(500).send("There was a problem finding the users.");
         res.status(200).send(users);
     });
@@ -18,7 +18,7 @@ router.get('/', function (req, res) {
 
 // CREATES A NEW USER
 router.post('/', function (req, res) {
-    BusinessProfileSchema.create(req.body, 
+    OrgmgmtSchema.create(req.body, 
         function (err, user) {
             if (err) return res.status(500).send("There was a problem adding the information to the database.");
             res.status(200).send({message: "Organization user added successfully"});
